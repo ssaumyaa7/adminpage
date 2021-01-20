@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+    <style>
+        select {
+            border: none;
+            border-radius: 0;
+            border-color: pink;
+            border-bottom: 1px solid green;
+        }
+        
+        .main {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        
+        .grd {
+            height: 300px;
+            width: 300px;
+            background-color: turquoise;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="grd">
+            <select name="country" class="countries" id="countryId">
+                <option value="">Select Country</option>
+            </select>
+            <select name="state" class="states" id="stateId">
+                <option value="">Select State</option>
+            </select>
+            <select name="city" class="cities" id="cityId">
+                <option value="">Select City</option>
+            </select>
+
+            <button class="btn btn-primary" type="submit" onclick="checkInput()">Button</button>
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+    <script src="js/checkInput.js"></script>
+
+
+</body>
+
+</html>
